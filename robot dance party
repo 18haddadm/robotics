@@ -1,0 +1,57 @@
+#include <Servo.h>
+Servo servoLeft;
+Servo servoRight;
+
+void setup() {
+  servoLeft.attach(12);
+  servoRight.attach(13);
+}
+
+
+
+void loop() {
+  servoLeft.writeMicroseconds(1500);
+  servoRight.writeMicroseconds(1500);
+//stop wheel
+delay (900);
+
+ servoLeft.writeMicroseconds(2100);
+    servoRight.writeMicroseconds(1200);
+ //stop wheel   
+ delay (900);
+ 
+  for (int i = 0; i < 2; i++) {
+    servoLeft.writeMicroseconds(1700);
+    servoRight.writeMicroseconds(1300);
+ //stop wheel   
+ delay (1000);
+  }
+  for (int i = 0; i < 2; i++) {
+    servoLeft.writeMicroseconds(1300);
+    servoRight.writeMicroseconds(1700);
+ //stop wheel   
+ delay (900);
+  servoLeft.writeMicroseconds(1300);
+    servoRight.writeMicroseconds(1700);
+     //stop wheel   
+ delay (900);
+   }
+   for (int i = 0; i < 2; i++) {
+    serLeft.writeMicroseconds(2000);
+    servoRight.writeMicroseconds(100);
+ //stop wheel   
+ delay (1000);
+}
+
+    servoLeft.writeMicroseconds(1700);
+    servoRight.writeMicroseconds(1300);
+ delay (900);
+
+    servoLeft.writeMicroseconds(900);
+    servoRight.writeMicroseconds(1700);
+ //stop wheel   
+ delay (900);
+
+}
+
+
